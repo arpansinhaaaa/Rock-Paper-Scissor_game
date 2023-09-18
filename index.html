@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<!--  The UI -->
+<body>
+  <div class="game-container">
+    <div class="buttons">
+      <h1>Rock Paper Scissor Game</h1>
+      <p>Choose your move</p>
+      <div class="button-box">
+        <button id="rock">&#x1F44A;</button>
+        <button id="paper">&#x1f590;</button>
+        <button id="scissors">&#x270c;</button>
+      </div>
+      <p id="result"></p>
+      <p id="result-element"></p>
+      <div class="scores">
+        Your score: <span id="user-score">0</span>
+        Computer score: <span id="computer-score">0</span>
+      </div>
+      <script src="./script.js"></script>
+    </div>
+
+    <div class="leaderboard-container">
+      <h1>LeaderBoard</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Your Choice</th>
+            <th>Computer Choice</th>
+            <th>Winner (with reason)</th>
+          </tr>
+        </thead>
+        <tbody id="leader-table"></tbody>
+      </table>
+    </div>
+  
+  </div>
+</body>
+
+</html>
